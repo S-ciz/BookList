@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>booklist</title>
+</head>
+<body >
+
+  
+   
+    <nav class="bg-primary  ">
+      <header class="container p-2">
+        <h3 class="text-light">My booklist</h3>
+      </header>
+    </nav>
+  <div id="parentElement" class="container  p-3 ">
+   
+     
+    
+     <div id="neighbor" class="container text-center mt-2">
+      <h1 class="display-5">My<span class="text-primary">Book</span>List</h1>
+     </div>
+  
+
+     <form id="form" class="container">
+      <!--Title-->
+      <div class="form-group">
+        <label class="py-2" for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title of book...">
+      </div>
+      <!-- author-->
+      <div class="form-group">
+        <label class="py-2" for="exampleInputEmail1">Author</label>
+        <input type="text" class="form-control" id="author" aria-describedby="emailHelp" placeholder="Enter author...">
+      </div>
+        <!--isbn-->
+      <div class="form-group">
+        <label class="py-2" for="exampleInputEmail1">Isbn</label>
+        <input type="number" class="form-control" id="isbn" aria-describedby="emailHelp" placeholder="Enter isbn...">
+      </div>
+      <div class=" py-3">
+        <button id="btn" class="btn btn-primary d-grid w-100">Add List</button>
+       </div>
+      
+     </form> 
+
+
+     <!--My list of booklist-->
+     
+     <table class="table">
+      
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Isbn</th>
+        <th>Remove book</th>
+      </tr>
+      
+      <tbody id="body">
+      
+
+      </tbody>
+
+     </table>
+      
+     
+    
+    
+
+  </div>
+   
+  
+  
+
+
+
+
+
+    
+    <script src="./Bootstrap/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
